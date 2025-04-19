@@ -16,16 +16,18 @@ const products = {
       { name: "Stage 14", price: 32000, image: "assets/stages/stage14.jpg" }
     ],
     lights: [
-      { name: "Light 1", price: 99, image: "assets/lights/light1.jpg" },
-      { name: "Light 2", price: 149, image: "assets/lights/light2.jpg" }
+      { name: "Sharpy", price: 2500, image: "assets/lights/light1.jpg" },
+      { name: "Satan", price: 1500, image: "assets/lights/light2.jpg" },
+      { name: "Laser Projector", price: 3500, image: "assets/lights/light3.jpg" },
+      { name: "Spot Light", price: 300, image: "assets/lights/light4.jpg" }
     ],
     sounds: [
-      { name: "Sound 1", price: 199, image: "assets/sounds/sound1.jpg" },
-      { name: "Sound 2", price: 249, image: "assets/sounds/sound2.jpg" }
+      { name: "Speackers", price: 18000, image: "assets/sounds/sound1.jpg" },
+      { name: "Mics", price: 3000, image: "assets/sounds/sound2.jpg" }
     ],
     catering: [
-      { name: "Catering 1", price: 299, image: "assets/catering/catering1.jpg" },
-      { name: "Catering 2", price: 349, image: "assets/catering/catering2.jpg" }
+      { name: "Catering 1", price: 15000, image: "assets/catering/catering1.jpg" },
+      { name: "Catering 2", price: 20000, image: "assets/catering/catering2.jpg" }
     ]
   };
   
