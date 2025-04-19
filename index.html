@@ -53,11 +53,11 @@
     <div class="order-form-box">
       <h2>Order Details</h2>
       <input type="text" id="buyer-name" placeholder="Name" required>
+      <input type="number" id="phone-number" placeholder="Phone Number" required>
       <input type="text" id="buyer-place" placeholder="Place" required>
       <input type="text" id="event-type" placeholder="Event Type / Style (e.g. Marriage)" required>
       <input type="date" id="event-date" required>
       <input type="time" id="event-time" required>
-      <input type="number" id="person-count" placeholder="Person Count" required>
       <textarea id="order-note" placeholder="Order Note (e.g. Suggestions...)"></textarea>
       <button onclick="sendToWhatsApp()">Order on WhatsApp</button>
       <button onclick="hideOrderForm()">Cancel</button>
