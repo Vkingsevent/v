@@ -111,13 +111,9 @@ const products = {
     const eventType = document.getElementById("event-type").value.trim();
     const eventDate = document.getElementById("event-date").value;
     const eventTime = document.getElementById("event-time").value;
-    const personCount = document.getElementById("person-count").value;
+    const phonenumber = document.getElementById("phone-number").value;
     const note = document.getElementById("order-note").value.trim();
   
-    if (!name || !place || !eventType || !eventDate || !eventTime || !personCount) {
-      alert("Please fill in all required fields.");
-      return;
-    }
   
     if (cart.length === 0) {
       alert("Your cart is empty!");
@@ -130,7 +126,7 @@ const products = {
     message += `Event: ${eventType}\n`;
     message += `Date: ${eventDate}\n`;
     message += `Time: ${eventTime}\n`;
-    message += `Count: ${personCount}\n`;
+    message += `Count: ${phonenumber}\n`;
     if (note) message += `Note: ${note}\n`;
   
     message += `\n🛒 *Order Summary:*\n`;
