@@ -14,25 +14,25 @@
       <button onclick="showCategory('sounds')">Sounds</button>
       <button onclick="showCategory('catering')">Catering</button>
     </div>
-    <div class="filter-container">
-      <button class="filter-btn" onclick="toggleFilterMenu()">Filter</button>
-      <div id="filter-menu" class="filter-menu">
-        <button onclick="filterPrice('low-to-high')">Low to High</button>
-        <button onclick="filterPrice('high-to-low')">High to Low</button>
-        <button onclick="filterPrice('6k-10k')">₹6k<br>to ₹10k</button>
-        <button onclick="filterPrice('10k-20k')">₹10k to ₹20k</button>
-        <button onclick="filterPrice('20k-40k')">₹20k to ₹40k</button>
-        <button onclick="filterPrice('40k-above')">₹40k and Above</button>
-      </div>
-    </div>
+
     <div class="cart-icon" onclick="toggleCart()">
       🛒 <span id="cart-count">0</span>
     </div>
   </div>
-
+  <div >
+    <button class="filter-btn" onclick="toggleFilterMenu()">Filter</button>
+    <div id="filter-menu" class="filter-menu">
+      <button onclick="filterPrice('low-to-high')">Low to High</button>
+      <button onclick="filterPrice('high-to-low')">High to Low</button>
+      <button onclick="filterPrice('6k-10k')">₹6k to ₹10k</button>
+      <button onclick="filterPrice('10k-20k')">₹10k to ₹20k</button>
+      <button onclick="filterPrice('20k-40k')">₹20k to ₹40k</button>
+      <button onclick="filterPrice('40k-above')">₹40k and Above</button>
+    </div>
+  </div>
   <div id="product-list" class="product-list"></div>
 
-  <button class="purchase-btn" onclick="showOrderForm()">‎ ‎ Purchase<img src="assets/whatsapplogo.png" alt="WhatsApp" style="width: 80px; height: 80px;"></button>
+  <button class="purchase-btn" onclick="showOrderForm()">‎ ‎ Purchase<img src="assets/whatsapplogo.png" alt="WhatsApp" style="width: 55px; height: 55px;"></button>
   
 
   <div id="cart" class="cart">
