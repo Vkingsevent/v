@@ -1,5 +1,5 @@
 const products = {
-    stages: [
+    events: [
       { name: "Stage 1", price: 6000, image: "assets/stages/stage1.jpg" },
       { name: "Stage 2", price: 8000, image: "assets/stages/stage2.jpg" },
       { name: "Stage 3", price: 10000, image: "assets/stages/stage3.jpg" },
@@ -14,6 +14,7 @@ const products = {
       { name: "Stage 12", price: 28000, image: "assets/stages/stage12.jpg" },
       { name: "Stage 13", price: 30000, image: "assets/stages/stage13.jpg" },
       { name: "Stage 14", price: 32000, image: "assets/stages/stage14.jpg" }
+      
     ],
     lights: [
       { name: "Sharpy", price: 2500, image: "assets/lights/light1.jpg" },
@@ -32,7 +33,7 @@ const products = {
   };
   
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  let currentCategory = 'stages';
+  let currentCategory = 'events';
   let currentFilter = 'none';
   
   function saveCart() {
@@ -45,6 +46,7 @@ const products = {
     cart.forEach((item, index) => {
       const li = document.createElement("li");
       li.innerHTML = `
+      
         <img src="${item.image}" alt="${item.name}">
         ${item.name} - ₹${item.price}
         <span class="remove-btn" onclick="removeFromCart(${index})">🗑️</span>
@@ -82,6 +84,7 @@ const products = {
       const div = document.createElement("div");
       div.className = "product";
       div.innerHTML = `
+
         <img src="${product.image}" onclick="showImage('${product.image}')">
         <h4>${product.name}</h4>
         <p>₹${product.price}</p>
