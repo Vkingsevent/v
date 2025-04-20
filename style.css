@@ -20,8 +20,8 @@ body {
   }
   
   .categories button {
-    margin-right: 10px;
-    padding: 7px 6px;
+    margin-right: 7px;
+    padding: 7px 5px;
     cursor: pointer;
     background-color: #444;
     color: #f0f0f0;
@@ -315,5 +315,8 @@ body {
   
   .order-form-box button:last-of-type {
     background-color: #ccc;
+  }
+  .blank-space {
+    height: 70px;
   }
   
