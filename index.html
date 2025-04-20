@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Splash Screen -->
+<div id="splash-screen">
+  <img src="assets/logo.png" alt="Logo" />
+</div>
+
+<!-- Main Content -->
+
+
+
+  <div class="navbar">
+    <div class="categories">
+      <button onclick="showCategory('stages')">Stages</button>
+      <button onclick="showCategory('entrance')">Entrance</button>
+      <button onclick="showCategory('catering')">Catering</button>
+      <button onclick="showCategory('other')">Other</button>
+
+    </div>
+
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </div>
+  <div >
+    <button class="filter-btn" onclick="toggleFilterMenu()">Price⚙️</button>
+    <div id="filter-menu" class="filter-menu">
+      <button onclick="filterPrice('low-to-high')">Low to High</button>
+      <button onclick="filterPrice('high-to-low')">High to Low</button>
+      <button onclick="filterPrice('6k-10k')">₹6k to ₹10k</button>
+      <button onclick="filterPrice('10k-20k')">₹10k to ₹20k</button>
+      <button onclick="filterPrice('20k-40k')">₹20k to ₹40k</button>
+      <button onclick="filterPrice('40k-above')">₹40k and Above</button>
+    </div>
+  </div>
+  <div id="product-list" class="product-list"></div>
+  <div class="blank-space"></div>
+  <button class="purchase-btn" onclick="showOrderForm()">‎ ‎ Purchase<img src="assets/whatsapplogo.png" alt="WhatsApp" style="width: 55px; height: 55px;"></button>
+<div id="cart" class="cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <span class="close-btn" onclick="toggleCart(false)">✖</span>
+    </div>
+    <ul id="cart-items"></ul>
+  </div>
+  <div id="cart-overlay" class="overlay" onclick="toggleCart(false)"></div>
+
+  <div id="image-modal" class="image-modal" onclick="hideImage()">
+    <img id="modal-img" src="" alt="Preview" />
+  </div>
+
+  <script src="script.js"></script>
+  <div id="order-form-container" class="overlay-form">
+    <div class="order-form-box">
+      <h2>Order Details</h2>
+      <input type="text" id="buyer-name" placeholder="Name" required>
+      <input type="number" id="phone-number" placeholder="Phone Number" required>
+      <input type="text" id="buyer-place" placeholder="Place" required>
+      <input type="text" id="event-type" placeholder="Event Type / Style (e.g. Marriage)" required>
+      <input type="date" id="event-date" required>
+      <input type="time" id="event-time" required>
+      <textarea id="order-note" placeholder="Order Note (e.g. Suggestions...)"></textarea>
+      <button onclick="sendToWhatsApp()">Order on WhatsApp</button>
+      <button onclick="hideOrderForm()">Cancel</button>
+    </div>
+  </div>
+  
+</body>
+</html>
