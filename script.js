@@ -191,7 +191,7 @@ function sendToWhatsApp() {
   });
   message += `\n*Total: ₹${total}*`;
 
-  const phoneNumber = "919778202896";
+  const phoneNumber = "916238913819";
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
